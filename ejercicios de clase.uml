@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_0_DWMPDgEe2oGqyPLNLTpA" name="ejercicios de clase">
+  <eAnnotations xmi:id="_0_DWMfDgEe2oGqyPLNLTpA" source="Objing">
+    <contents xmi:type="uml:Property" xmi:id="_0_DWMvDgEe2oGqyPLNLTpA" name="exporterVersion">
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_0_DWM_DgEe2oGqyPLNLTpA" value="3.0.0"/>
+    </contents>
+  </eAnnotations>
+  <packagedElement xmi:type="uml:Class" xmi:id="_0_DWNPDgEe2oGqyPLNLTpA" name="clientes">
+    <ownedAttribute xmi:id="_0_DWNfDgEe2oGqyPLNLTpA" name="cuenta" visibility="public" type="_0_DWP_DgEe2oGqyPLNLTpA" isUnique="false" aggregation="composite" association="_0_DWPPDgEe2oGqyPLNLTpA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0_DWNvDgEe2oGqyPLNLTpA" value="*"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_0_DWN_DgEe2oGqyPLNLTpA" name="nombre" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_0_DWOPDgEe2oGqyPLNLTpA" name="direccion" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_0_DWOfDgEe2oGqyPLNLTpA" name="dni" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_0_DWOvDgEe2oGqyPLNLTpA" name="edad" visibility="public" isUnique="false" isDerived="true">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_0_DWO_DgEe2oGqyPLNLTpA" name="fechaNacimiento" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDate"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_0_DWPPDgEe2oGqyPLNLTpA" memberEnd="_0_DWNfDgEe2oGqyPLNLTpA _0_DWPfDgEe2oGqyPLNLTpA">
+    <ownedEnd xmi:id="_0_DWPfDgEe2oGqyPLNLTpA" visibility="public" type="_0_DWNPDgEe2oGqyPLNLTpA" isUnique="false" association="_0_DWPPDgEe2oGqyPLNLTpA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0_DWPvDgEe2oGqyPLNLTpA"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_0_DWP_DgEe2oGqyPLNLTpA" name="Cuenta">
+    <ownedAttribute xmi:id="_0_DWQPDgEe2oGqyPLNLTpA" name="movimiento" visibility="public" type="_0_DWYvDgEe2oGqyPLNLTpA" isUnique="false" aggregation="composite" association="_0_DWT_DgEe2oGqyPLNLTpA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0_DWQfDgEe2oGqyPLNLTpA" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0_DWQvDgEe2oGqyPLNLTpA"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_0_DWQ_DgEe2oGqyPLNLTpA" name="numero" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_0_DWRPDgEe2oGqyPLNLTpA" name="saldo" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_0_DWRfDgEe2oGqyPLNLTpA" name="Aportacion" visibility="public">
+      <ownedParameter xmi:id="_0_DWRvDgEe2oGqyPLNLTpA" name="Cantidad" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0_DWR_DgEe2oGqyPLNLTpA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0_DWSPDgEe2oGqyPLNLTpA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0_DWSfDgEe2oGqyPLNLTpA" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_0_DWSvDgEe2oGqyPLNLTpA" name="Reintegro" visibility="public">
+      <ownedParameter xmi:id="_0_DWS_DgEe2oGqyPLNLTpA" name="Cantidad" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0_DWTPDgEe2oGqyPLNLTpA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0_DWTfDgEe2oGqyPLNLTpA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0_DWTvDgEe2oGqyPLNLTpA" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_0_DWT_DgEe2oGqyPLNLTpA" memberEnd="_0_DWQPDgEe2oGqyPLNLTpA _0_DWUPDgEe2oGqyPLNLTpA">
+    <ownedEnd xmi:id="_0_DWUPDgEe2oGqyPLNLTpA" visibility="public" type="_0_DWP_DgEe2oGqyPLNLTpA" isUnique="false" association="_0_DWT_DgEe2oGqyPLNLTpA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_0_DWUfDgEe2oGqyPLNLTpA" name="Sucursales">
+    <ownedAttribute xmi:id="_0_DWUvDgEe2oGqyPLNLTpA" name="clientes" visibility="public" type="_0_DWNPDgEe2oGqyPLNLTpA" isUnique="false" association="_0_DWXPDgEe2oGqyPLNLTpA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0_DWU_DgEe2oGqyPLNLTpA" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0_DWVPDgEe2oGqyPLNLTpA"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_0_DWVfDgEe2oGqyPLNLTpA" name="cuenta" visibility="public" type="_0_DWP_DgEe2oGqyPLNLTpA" isUnique="false" aggregation="shared" association="_0_DWYPDgEe2oGqyPLNLTpA">
+      <ownedComment xmi:id="_0_DWVvDgEe2oGqyPLNLTpA">
+        <body>&lt;Enter note text here></body>
+      </ownedComment>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0_DWV_DgEe2oGqyPLNLTpA" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0_DWWPDgEe2oGqyPLNLTpA"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_0_DWWfDgEe2oGqyPLNLTpA" name="numerold" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_0_DWWvDgEe2oGqyPLNLTpA" name="direccion" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_0_DWW_DgEe2oGqyPLNLTpA" name="telefono" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_0_DWXPDgEe2oGqyPLNLTpA" memberEnd="_0_DWUvDgEe2oGqyPLNLTpA _0_DWXfDgEe2oGqyPLNLTpA">
+    <ownedEnd xmi:id="_0_DWXfDgEe2oGqyPLNLTpA" visibility="public" type="_0_DWUfDgEe2oGqyPLNLTpA" isUnique="false" association="_0_DWXPDgEe2oGqyPLNLTpA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0_DWXvDgEe2oGqyPLNLTpA" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0_DWX_DgEe2oGqyPLNLTpA"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_0_DWYPDgEe2oGqyPLNLTpA" memberEnd="_0_DWVfDgEe2oGqyPLNLTpA _0_DWYfDgEe2oGqyPLNLTpA">
+    <ownedEnd xmi:id="_0_DWYfDgEe2oGqyPLNLTpA" visibility="public" type="_0_DWUfDgEe2oGqyPLNLTpA" isUnique="false" association="_0_DWYPDgEe2oGqyPLNLTpA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_0_DWYvDgEe2oGqyPLNLTpA" name="Movimiento">
+    <ownedAttribute xmi:id="_0_DWY_DgEe2oGqyPLNLTpA" name="importe" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_0_DWZPDgEe2oGqyPLNLTpA" name="fecha" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_0_DWZfDgEe2oGqyPLNLTpA" name="áreas metropolitanas">
+    <ownedAttribute xmi:id="_0_DWZvDgEe2oGqyPLNLTpA" name="hoteles" visibility="public" type="_0_DWc_DgEe2oGqyPLNLTpA" isUnique="false" aggregation="composite" association="_0_DWcfDgEe2oGqyPLNLTpA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0_DWZ_DgEe2oGqyPLNLTpA" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0_DWaPDgEe2oGqyPLNLTpA"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_0_DWafDgEe2oGqyPLNLTpA" name="nombre del area" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_0_DWavDgEe2oGqyPLNLTpA" name="nombre del estado" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_0_DWa_DgEe2oGqyPLNLTpA" name="nombre del pais" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_0_DWbPDgEe2oGqyPLNLTpA" name="Nombre areas" visibility="public">
+      <ownedParameter xmi:id="_0_DWbfDgEe2oGqyPLNLTpA" name="Nombre-areas" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0_DWbvDgEe2oGqyPLNLTpA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0_DWb_DgEe2oGqyPLNLTpA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0_DWcPDgEe2oGqyPLNLTpA" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_0_DWcfDgEe2oGqyPLNLTpA" memberEnd="_0_DWZvDgEe2oGqyPLNLTpA _0_DWcvDgEe2oGqyPLNLTpA">
+    <ownedEnd xmi:id="_0_DWcvDgEe2oGqyPLNLTpA" visibility="public" type="_0_DWZfDgEe2oGqyPLNLTpA" isUnique="false" association="_0_DWcfDgEe2oGqyPLNLTpA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_0_DWc_DgEe2oGqyPLNLTpA" name="Hoteles">
+    <ownedAttribute xmi:id="_0_DWdPDgEe2oGqyPLNLTpA" name="tarjetas de crédito" visibility="public" type="_0_DWkvDgEe2oGqyPLNLTpA" isUnique="false" association="_0_DWgvDgEe2oGqyPLNLTpA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0_DWdfDgEe2oGqyPLNLTpA" value="*"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_0_DWdvDgEe2oGqyPLNLTpA" name="nombre" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_0_DWd_DgEe2oGqyPLNLTpA" name="direccion" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_0_DWePDgEe2oGqyPLNLTpA" name="nº habitaciones" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_0_DWefDgEe2oGqyPLNLTpA" name="nº telefono" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_0_DWevDgEe2oGqyPLNLTpA" name="nº estrellas" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_0_DWe_DgEe2oGqyPLNLTpA" name="precio habitacion simple" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_0_DWfPDgEe2oGqyPLNLTpA" name="precio habitación doble" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_0_DWffDgEe2oGqyPLNLTpA" name="Nombre Hoteles" visibility="public">
+      <ownedParameter xmi:id="_0_DWfvDgEe2oGqyPLNLTpA" name="Nombre" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0_DWf_DgEe2oGqyPLNLTpA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0_DWgPDgEe2oGqyPLNLTpA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0_DWgfDgEe2oGqyPLNLTpA" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_0_DWgvDgEe2oGqyPLNLTpA" memberEnd="_0_DWdPDgEe2oGqyPLNLTpA _0_DWg_DgEe2oGqyPLNLTpA">
+    <ownedEnd xmi:id="_0_DWg_DgEe2oGqyPLNLTpA" visibility="public" type="_0_DWc_DgEe2oGqyPLNLTpA" isUnique="false" association="_0_DWgvDgEe2oGqyPLNLTpA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0_DWhPDgEe2oGqyPLNLTpA" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_0_DWhfDgEe2oGqyPLNLTpA" name="Cadenas de Hoteles">
+    <ownedAttribute xmi:id="_0_DWhvDgEe2oGqyPLNLTpA" name="hoteles" visibility="public" type="_0_DWc_DgEe2oGqyPLNLTpA" isUnique="false" aggregation="shared" association="_0_DWj_DgEe2oGqyPLNLTpA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0_DWh_DgEe2oGqyPLNLTpA" value="*"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_0_DWiPDgEe2oGqyPLNLTpA" name="nombre" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_0_DWifDgEe2oGqyPLNLTpA" name="director" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_0_DWivDgEe2oGqyPLNLTpA" name="Nombre Director" visibility="public">
+      <ownedParameter xmi:id="_0_DWi_DgEe2oGqyPLNLTpA" name="Nombre Director" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0_DWjPDgEe2oGqyPLNLTpA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0_DWjfDgEe2oGqyPLNLTpA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0_DWjvDgEe2oGqyPLNLTpA" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_0_DWj_DgEe2oGqyPLNLTpA" memberEnd="_0_DWhvDgEe2oGqyPLNLTpA _0_DWkPDgEe2oGqyPLNLTpA">
+    <ownedEnd xmi:id="_0_DWkPDgEe2oGqyPLNLTpA" visibility="public" type="_0_DWhfDgEe2oGqyPLNLTpA" isUnique="false" association="_0_DWj_DgEe2oGqyPLNLTpA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0_DWkfDgEe2oGqyPLNLTpA"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_0_DWkvDgEe2oGqyPLNLTpA" name="Tarjetas de crédito">
+    <ownedAttribute xmi:id="_0_DWk_DgEe2oGqyPLNLTpA" name="nombre" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_0_DWlPDgEe2oGqyPLNLTpA" name="Nombre Tarjeta Credido" visibility="public">
+      <ownedParameter xmi:id="_0_DWlfDgEe2oGqyPLNLTpA" name="Nombre" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0_DWlvDgEe2oGqyPLNLTpA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0_DWl_DgEe2oGqyPLNLTpA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_0_DWmPDgEe2oGqyPLNLTpA" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+  </packagedElement>
+</uml:Model>
